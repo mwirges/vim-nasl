@@ -10,6 +10,17 @@ Alternatively, for a bare-bones or custom install, just clone this repo and copy
 Syntax Highlighting
 -------------------
 
+You do not need to do anything to enable syntax highlighting.
+By default, *.nasl and *.inc will be set to the `nasl` filetype.
+
+However, if you do not want this behavior use:
+
+```
+let g:nasl_no_auto_ft = 1
+```
+
+If you want to do it manually, follow these instructions
+
 Add the following to your `.vimrc`:
 
 ```vim
