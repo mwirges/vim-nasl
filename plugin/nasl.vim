@@ -1,4 +1,4 @@
-function! nasl:FTCheck()
+function! nasl#FTCheck()
     " reproduction of vim's filetype.vim to hook pov files
     " note that asm syntax is disabled, so you either
     " have to copy that code in here or figure out
