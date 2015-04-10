@@ -2657,6 +2657,8 @@ syn match   naslSpecial display contained "CVSS2\v#AV:./AC:./Au:./C:./I:./A:." c
 
 " Comments
 syn region  naslComment	start="#" skip="\$" end="$" keepend contains=@Spell,naslSpaceError
+syn region  naslComment start="//" skip="\$" end="$" keepend contains=@Spell,naslSpaceError
+syn region  naslComment start="/\*" end="\*/" keepend contains=@Spell,naslSpaceError
 
 " Hexadecimal and integer numbers
 syn match   naslNumbers display transparent "\<\d\|\.\d" contains=naslNumber
